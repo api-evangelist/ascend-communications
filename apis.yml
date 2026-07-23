@@ -1,8 +1,27 @@
 aid: ascend-communications
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ascend-communications.png
 name: Ascend Communications
-description: 'Ascend Communications is a company surfaced as a portfolio company of kleiner-perkins and
-  added to the API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'Ascend Communications, Inc. was an Alameda, California manufacturer of wide area networking
+  equipment, founded in 1988 and taken public in 1994. It developed, manufactured and sold WAN access
+  solutions — remote-access concentrators, ISDN and frame relay gear, and the MAX family of access
+  servers — to telecommunications carriers, Internet service providers and corporate customers
+  worldwide, becoming a leading supplier during the dial-up internet build-out of the 1990s. On January
+  13, 1999 Lucent Technologies announced a definitive agreement to merge with Ascend in a stock deal
+  valued at roughly $20.3 billion, and the merger completed on June 24, 1999, when Ascend became a
+  wholly owned subsidiary of Lucent. The company has not operated independently since. It was surfaced
+  in the API Evangelist network as a Kleiner Perkins portfolio company; it predates the public web API
+  era and publishes no developer surface today.'
 url: https://raw.githubusercontent.com/api-evangelist/ascend-communications/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +29,46 @@ x-backed-by:
 - kleiner-perkins
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-defunct:
+  founded: '1988'
+  ipo: '1994'
+  acquired_by: Lucent Technologies
+  announced: '1999-01-13'
+  completed: '1999-06-24'
+  value_usd: 20300000000
+  note: 'Merged into Lucent Technologies as a wholly owned subsidiary; no independent operations, no
+    developer portal, and no API surface. Historic domains ascend.com and ascendcommunications.com are
+    now unrelated parked / domain-sale pages (verified 2026-07-19).'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
+- Networking
+- Telecommunications
+- Remote Access
+- Hardware
+- WAN
+- Defunct
+- Acquired
 apis: []
+common:
+- type: Wikipedia
+  url: https://en.wikipedia.org/wiki/Ascend_Communications
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  note: 'Company defunct since the 1999 Lucent merger. Probed ascend.com and ascendcommunications.com
+    (both unrelated parked domains; ascendcommunications.com returns wildcard soft-404 200s, so its
+    /.well-known/ responses are not real documents), npm/PyPI (only unrelated Ascend.io and Apex Fintech
+    packages), and github.com/ascend-communications (404). No API, docs, SDK, package, well-known, MCP,
+    or event surface exists to capture. No artifacts written by design.'
